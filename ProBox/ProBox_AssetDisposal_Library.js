@@ -1,5 +1,9 @@
 /*
 
+	Example function call: 
+
+		disposeAsset(nlapiGetUser(), 2143, new Date(), 92, 565, 2, -7, 2);
+
 	Overview: this script creates a "BG - Process Instance" record
 		which is a Custom Record in the Fixed Asset Module. These
 		records are created and then a scheduled process executes
@@ -11,6 +15,9 @@
 		environments due to the permissions required around the 
 		records involved and the fact that the system needs to 
 		scheduled a script.
+
+	Note: if the asset disposal fails due to an out of balance error
+		make sure to check this SuiteAnswer: 49904
 
 	Parameters:
 		user - Employee Internal ID
@@ -42,8 +49,8 @@ function disposeAsset(user, asset, date, item, customer, amount, tax, location) 
 				cust:customer,
 				amt:amount,
 				tax:tax,
-				loc:location
-				JrnPermit:4,
+				loc:location,
+				JrnPermit:4
 			},
 			custrecord_far_proins_procmsg:'Programatically Scheduling the Disposal',
 			custrecord_far_proins_recordid:asset,
