@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Service Request Confirmation</title>
+    <link rel="stylesheet" href="https://system.na1.netsuite.com/c.1157106/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <style type="text/css">
+    .margin-top20 {margin-top:20px;}
+    #wrapper #content h1 {
+        padding-bottom: 0;
+        text-align: center !important;
+    }
+
+    .radio-inline {
+        padding-right: 20px;
+        padding-left:0;
+        vertical-align: top;
+    }
+    .radio-top {
+        padding-bottom: 5px;
+    }
+    .radio-inline+.radio-inline {
+        margin-left:0;
+    }
+    ul.select-request {
+        list-style:none;
+        margin-left:12px;
+        margin-bottom:0 !important;
+    }
+    #contact-select {
+        padding-left:0;
+    }
+    .red {border:1px solid red;}
+    #wrapper #content h1:after {background:transparent;}
+    #content {padding-top:20px;}
+    </style>
+</head>
+
+</head>
+
+<body>
+<div id="wrapper">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="content">
+
+                <!-- Form Title -->
+                <h1>SERVICE REQUEST CONFIRMATION</h1>
+
+                <!-- Results -->
+                <div class="content">
+
+                    <div class="row" style="text-align:center;">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                        <h4>Your Service Request has been received.</h4>
+
+                                        <h4>Your Service Request # is {{repair_request}}.</h4>
+
+                                        <p>We are processing your request and will respond to your within 48 hours.</p>
+
+                                        <p>Thank you!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="print">
+                                <p><a onclick="_print()">Print this page</a></p>
+                                <p>
+                                    <a href="https://system.na1.netsuite.com/app/site/hosting/scriptlet.nl?script=163&deploy=2&compid=1157106&h=7c505c928103c9e46364">Back to request form</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="https://system.na1.netsuite.com/c.1157106/js/jquery-1.12.1.min.js"></script>
+<script src="https://system.na1.netsuite.com/c.1157106/js/bootstrap.min.js"></script>
+<script src="https://system.na1.netsuite.com/c.1157106/TrueCloud/Service Repair/repair_request_form_js.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+</body>
+</html>

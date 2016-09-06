@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="desktop landscape wf-futurapt-n3-active wf-futurapt-n4-active wf-futurapt-n5-active wf-active">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Service Request Form</title>
+
+    <link rel="stylesheet" href="https://system.na1.netsuite.com/c.1157106/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <style type="text/css">
+    .margin-top20 {margin-top:20px;}
+    #wrapper #content h1 {
+        padding-bottom: 0;
+        text-align: center !important;
+    }
+
+    .radio-inline {
+        padding-right: 20px;
+        padding-left:0;
+        vertical-align: top;
+    }
+    .radio-top {
+        padding-bottom: 5px;
+    }
+    .radio-inline+.radio-inline {
+        margin-left:0;
+    }
+    ul.select-request {
+        list-style:none;
+        margin-left:12px;
+        margin-bottom:0 !important;
+    }
+    #contact-select {
+        padding-left:0;
+    }
+    .red {border:1px solid red;}
+    #wrapper #content h1:after {background:transparent;}
+    #content {padding-top:20px;}
+    </style>
+</head>
+
+<body>
+<div id="wrapper">
+
+    <div class="container right-sidebar">
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-9" style="text-align:center;"><h1>Service Request Form</h1></div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10" id="content">
+
+                <!-- Form Title -->
+
+                <form id="repair_request_form" name="repair_request_form" enctype="multipart/form-data" method="post" novalidate
+                action="https://forms.na1.netsuite.com/app/site/hosting/scriptlet.nl?script=163&deploy=1&compid=1157106&h=4e6b3fc93d6c175bf9ab" >
+                
+                    <!--form id="load-form-tl"-->
+                    <input type="hidden" name="formname" value="prod_ship_req_form" />
+                    <input type="hidden" name="compid" value="3634362" />
+                    <input type="hidden" name="script" value="158" />
+                    <input type="hidden" name="deploy" value="4" />
+                    <input type="hidden" name="h" value="c925b15ef4eeb3c9c17a" />
+                    <input type="hidden" name="lineitems_hdn" />
+                
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Customer Information</h3>
+                                </div>
+                                <div class="panel-body" id="customer">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="input-label">Email</label>
+                                                <input type="text" class="form-control input-sm" id="email" name="email" required >
+                                            </div>                                        
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="input-label">First Name</label>
+                                                <input type="text" class="form-control input-sm" id="fname" name="fname" required >
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="input-label">Last Name</label>
+                                                <input type="text" class="form-control input-sm" id="lname" name="lname" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="input-label">Address</label>
+                                                <input type="text" class="form-control input-sm" id="address1" name="address1" required >
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="input-label">Address 2</label>
+                                                <input type="text" class="form-control input-sm" id="address2" name="address2" >
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="input-label">City</label>
+                                                <input type="text" class="form-control input-sm" id="city" name="city" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">                                        
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="input-label">State</label>
+                                                <select class="form-control" id="state" name="state" required>
+                                                    <option value=""></option>
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="AK">Alaska</option>
+                                                    <option value="AZ">Arizona</option>
+                                                    <option value="AR">Arkansas</option>
+                                                    <option value="CA">California</option>
+                                                    <option value="CO">Colorado</option>
+                                                    <option value="CT">Connecticut</option>
+                                                    <option value="DE">Delaware</option>
+                                                    <option value="DC">District Of Columbia</option>
+                                                    <option value="FL">Florida</option>
+                                                    <option value="GA">Georgia</option>
+                                                    <option value="HI">Hawaii</option>
+                                                    <option value="ID">Idaho</option>
+                                                    <option value="IL">Illinois</option>
+                                                    <option value="IN">Indiana</option>
+                                                    <option value="IA">Iowa</option>
+                                                    <option value="KS">Kansas</option>
+                                                    <option value="KY">Kentucky</option>
+                                                    <option value="LA">Louisiana</option>
+                                                    <option value="ME">Maine</option>
+                                                    <option value="MD">Maryland</option>
+                                                    <option value="MA">Massachusetts</option>
+                                                    <option value="MI">Michigan</option>
+                                                    <option value="MN">Minnesota</option>
+                                                    <option value="MS">Mississippi</option>
+                                                    <option value="MO">Missouri</option>
+                                                    <option value="MT">Montana</option>
+                                                    <option value="NE">Nebraska</option>
+                                                    <option value="NV">Nevada</option>
+                                                    <option value="NH">New Hampshire</option>
+                                                    <option value="NJ">New Jersey</option>
+                                                    <option value="NM">New Mexico</option>
+                                                    <option value="NY">New York</option>
+                                                    <option value="NC">North Carolina</option>
+                                                    <option value="ND">North Dakota</option>
+                                                    <option value="OH">Ohio</option>
+                                                    <option value="OK">Oklahoma</option>
+                                                    <option value="OR">Oregon</option>
+                                                    <option value="PA">Pennsylvania</option>
+                                                    <option value="RI">Rhode Island</option>
+                                                    <option value="SC">South Carolina</option>
+                                                    <option value="SD">South Dakota</option>
+                                                    <option value="TN">Tennessee</option>
+                                                    <option value="TX">Texas</option>
+                                                    <option value="UT">Utah</option>
+                                                    <option value="VT">Vermont</option>
+                                                    <option value="VA">Virginia</option>
+                                                    <option value="WA">Washington</option>
+                                                    <option value="WV">West Virginia</option>
+                                                    <option value="WI">Wisconsin</option>
+                                                    <option value="WY">Wyoming</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="input-label">Zip Code</label>
+                                                <input type="text" class="form-control input-sm" id="zip" name="zip" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="input-label">Phone</label>
+                                                <input type="text" class="form-control input-sm" id="phone" name="phone" required >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="input-label">Company Name</label>
+                                                <input type="text" class="form-control input-sm" id="companyname" name="companyname" >
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel-heading">                 
+                                    <h3 class="panel-title">Request Type</h3>
+                                </div>
+                                <div class="panel-body" id="customer">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="input-label">Service Request</label>
+                                                <select id="request">
+                                                    <option value="1">Customer Drop-Off</option>
+                                                    <option value="2">Request Pickup/Delivery</option>
+                                                    <option value="3">On-Site Repair</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group" id="repair-facility" style="display:none;">
+                                                <label class="input-label">Repair Facility</label>
+                                                <select id="facilities">
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                    </div>   
+                                </div>                                
+                                
+                                <div class="panel-heading">                 
+                                    <h3 class="panel-title">Equipment</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row" id="item-heading">
+                                        <div class="col-md-4"><label class="input-label">Serial Number</label></div>
+                                        <div class="col-md-4"><label class="input-label">Make/Model of Car</label></div>
+                                        <div class="col-md-4"><label class="input-label">Description of Problem</label></div>
+                                    </div>
+                                    <div class="row" id="item">
+                                        <input type="hidden" name="completeItemList_1" id="completeItemList_1">
+                                        <div class="col-md-4">
+                                            <input type="text" id="sn_1" name="sn_1" class="form-control input-sm" data-num="1">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control input-sm" name="make_1" id="make_1" value="" data-num="1" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <textarea class="form-control input-sm" name="problem_1" id="problem_1" value="" data-num="1" rows="1"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-top20 item-buttons">
+                                        <div class="col-md-4">
+                                            <button class="btn btn-primary btn-xs add-row" type="button" data-num="1">Add Equipment</button>
+                                            <button class="btn btn-primary btn-xs remove-row" type="button" data-num="1">Remove Equipment</button>
+                                        </div>
+                                        <div class="col-md-8"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Buttons -->
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div align="center" class="gform_footer top_label submit_btn">
+                                <button type="button" name="submitbtn" id="submitbtn" class="btn btn-primary btn-block" data-loading-text="Saving...">Submit</button>
+                                <input type="hidden" name="lineitems_hdn" />
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-1"></div>            
+        </div>
+    </div>
+</div>
+<script src="https://system.na1.netsuite.com/c.1157106/js/jquery-1.12.1.min.js"></script>
+<script src="https://system.na1.netsuite.com/c.1157106/js/bootstrap.min.js"></script>
+<script src="https://system.na1.netsuite.com/c.1157106/TrueCloud/Service Repair/repair_request_form_js.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+</body>
+</html>
